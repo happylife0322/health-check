@@ -1,0 +1,149 @@
+.health-check-accordion {
+
+	border: 1px solid #e2e4e7;
+
+	.health-check-accordion-heading {
+
+		margin: 0;
+		border-top: 1px solid #e2e4e7;
+		font-size: inherit;
+		line-height: inherit;
+		font-weight: 600;
+		color: inherit;
+
+		&:first-child {
+
+			border-top: none;
+		}
+	}
+
+	.health-check-accordion-trigger {
+
+		background: #fff;
+		border: 0;
+		color: #32373c;
+		cursor: pointer;
+		display: block;
+		font-weight: 400;
+		margin: 0;
+		padding: 1em 3.5em 1em 1.5em;
+		position: relative;
+		text-align: left;
+		width: 100%;
+
+		&:hover,
+		&:active {
+
+			background: #f8f9f9;
+		}
+
+		&:focus {
+
+			color: #191e23;
+			border: none;
+			box-shadow: none;
+			outline-offset: -2px;
+			outline: 1px dotted #555d66;
+		}
+
+		.title {
+
+			display: inline-block;
+			pointer-events: none;
+			font-weight: 600;
+		}
+
+		.icon {
+
+			border: solid #555d66;
+			border-width: 0 2px 2px 0;
+			height: 0.5rem;
+			pointer-events: none;
+			position: absolute;
+			right: 1.5em;
+			top: 50%;
+			transform: translateY(-70%) rotate(45deg);
+			width: 0.5rem;
+		}
+
+		.badge {
+
+			float: right;
+			padding: 0.1rem 0.5rem 0.15rem;
+			color: #32373c;
+			font-weight: 600;
+			margin-left: 0.5rem;
+
+			&.blue {
+
+				border: 1px solid #bfe7f3;
+			}
+
+			&.orange {
+
+				border: 1px solid #ffb900;
+			}
+
+			&.red {
+
+				border: 1px solid #dc3232;
+			}
+
+			&.green {
+
+				border: 1px solid #46b450;
+			}
+
+			&.purple {
+
+				border: 1px solid #826eb4;
+			}
+
+			&.gray {
+
+				border: 1px solid #ccd0d4;
+			}
+		}
+
+		&[aria-expanded="true"] {
+
+			.icon {
+
+				transform: translateY(-30%) rotate(-135deg);
+			}
+		}
+	}
+
+	.health-check-accordion-panel {
+
+		margin: 0;
+		padding: 1em 1.5em;
+		background: #fff;
+
+		> div {
+
+			display: block;
+		}
+
+		&[hidden] {
+
+			display: none;
+		}
+
+		a {
+
+			.dashicons {
+
+				text-decoration: none;
+			}
+		}
+	}
+
+	dl {
+
+		dd {
+
+			margin: 0 0 0.5em 2em;
+		}
+	}
+}

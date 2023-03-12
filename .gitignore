@@ -1,0 +1,11 @@
+.idea/
+
+node_modules/
+wordpress-coding-standards
+php-codesniffer
+health-check/
+vendor/
+build/
+
+.wp-env.override.json
+health-check.zip
